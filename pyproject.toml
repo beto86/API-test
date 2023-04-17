@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "api-test"
+version = "1.0.0"
+description = "API twetter"
+authors = ["beto86 <beto.brava86@gmail.com>"]
+readme = "README.md"
+packages = [{include = "api_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+tweepy = "^4.13.0"
+pymongo = "^4.3.3"
+fastapi = "^0.95.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.0"
+flake8 = "^6.0.0"
+black = "^23.3.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
